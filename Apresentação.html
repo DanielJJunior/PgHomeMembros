@@ -1,71 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-        <link href="./css/style.css" rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Solutions</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="header">
-        
-    <div class="menu_header">
-        <nav class="texto_menu_header">
-            <ul>
-                <img class="logo" src="./img/logo.png">
-                <li>Quem somos</li>
-                <li>Projetos</li>
-                <li>Contatos</li>
-            </ul>
-        </nav>
-            <div class="info_header">
-                
-                <h1 class="h1_keep">Keep</h1>
-                <h1 class="h1_solutions">Solutions</h1>
-                <h2 class="texto_base1">As respostas para seus problemas</h2>
-                <h2 class="texto_base2">A equipe de desenvolvimento e infraestrura que você precisa</h2>
-                <a class="botao_saibamais">Saiba mais</a>
+    <header class="header flex ai-center flex-collumn">
+        <div class="header_content">
+            <div class="menu_header">
+                <nav class="nav_menu_header">
+                    <ul class="flex ai-center jc-space-btw">
+                        <img class="logo" src="./img/logo.png">
+                        <li><a class="nav-item">Quem somos</a></li>
+                        <li><a class="nav-item">Projetos</a></li>
+                        <li><a class="nav-item">Contatos</a></li>
+                        <span class="nav-indicator"></span>
+                    </ul>
+                </nav>
             </div>
-    </div>
+        </div>
     </header>
-
-    <section class="membros">
-        <div class="corpo">
-            <h1 class="titulo_pg">Quem Somos</h1>
-            <div class="card_full_direita">
-                <div class="card_direita">
-                    <h1 class="nome">Daniel Eusébio de Souza Júnior</h1>
-                    <h2 class="titulo">Devops</h2>
-                    <h3 class="skills">Soft Skills</h3>
-                    <h3 class="skills">Hard Skills</h3>
-                    <h3 class="skills">Outras competencias</h3>
-                        <img class="foto_membro_direita" src="./img/foto_daniel.jpg">
+    <section class="banner flex jc-center">
+        <div class="vidro"></div>
+        <div class="banner_content flex ai-center"> 
+            <div class="banner_text flex flex-collumn jc-space-eve">
+                <div class="titulo">
+                    <h1 class="h1_keep">Keep</h1>
+                    <h1 class="h1_solutions">Solutions</h1>
                 </div>
+                <div class="text-base">
+                    <h2 class="texto_base1">As respostas para seus problemas</h2>
+                    <h2 class="texto_base2">A equipe de desenvolvimento e infraestrura que você precisa!</h2>
+                </div>
+                <button class="botao_saibamais">Saiba mais</button>
             </div>
-            
-            <div class="card_full_esquerda">
-                <div class="card_esquerda">
-                    <img class="foto_membro_esquerda" src="./img/foto_alan.jpg">
-                    <h1 class="nome">Alan da Costa Santos</h1>
-                    <h2 class="titulo">Web Designer e Front-end</h2>
-                    <h3 class="skills">Soft Skills</h3>
-                    <h3 class="skills">Hard Skills</h3>
-                    <h3 class="skills">Outras competencias</h3>
-                        
+        </div>
+    </section>
+    <section class="membros flex jc-center">
+        <div class="membros_content">
+            <h1 class="titulo_pg">Quem Somos</h1>
+            <div class="cards">
+                
+                <!-- CARD ALAN -->
+                <div class="card_full_esquerda flex">
+                    <img class="foto_membro_esquerda" src="./img/alan.png">
+                    <div class="card_esquerda flex flex-collumn jc-center">
+                        <div class="titulo-card">
+                            <h2 class="nome">Alan da Costa Santos</h2>
+                            <p class="titulo">Web Designer e Front-end</p>
+                        </div>
+                        <div class="card-content flex">
+                            <div class="card-info flex">
+                                <div class="btns flex flex-collumn jc-space-btw">
+                                    <button class="skills">Soft Skills</button>
+                                    <button class="skills">Hard Skills</button>
+                                    <button class="skills">Outras competencias</button>
+                                </div>
+                                <div class="vl"></div>
+                                <div class="card-text">
+                                    <ul class="list-card flex flex-collumn jc-space-eve">
+                                        <li>Boa comunicação;</li>
+                                        <li>Criativo;</li>
+                                        <li>Dedicação;</li>
+                                        <li>Organização;</li>
+                                        <li>Rápido Aprendizado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- CARD DANIEL -->
+                <div class="card_full_direita flex jc-flex-end">
+                    <div class="card_direita flex flex-collumn jc-center">
+                        <div class="titulo-card">
+                            <h2 class="nome">Daniel Eusébio de Souza Júnior</h2>
+                            <p class="titulo">Devops</p>
+                        </div>
+                        <div class="card-content flex">
+                            <div class="card-info flex">
+                                <div class="btns flex flex-collumn jc-space-btw">
+                                    <button class="skills">Soft Skills</button>
+                                    <button class="skills">Hard Skills</button>
+                                    <button class="skills">Outras competencias</button>
+                                </div>
+                                <div class="vl"></div>
+                                <div class="card-text">
+                                    <ul class="list-card flex flex-collumn jc-space-eve">
+                                        <li>Paciência;</li>
+                                        <li>Responsabilidade;</li>
+                                        <li>Competênte;</li>
+                                        <li>Adaptabilidade;</li>
+                                        <li>Esforçado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="foto_membro_direita" src="./img/daniel.png">
+                </div>
+
+                <!-- CARD GIOVANNA -->
+                <div class="card_full_esquerda flex">
+                    <img class="foto_membro_esquerda" src="./img/giovanna.png">
+                    <div class="card_esquerda flex flex-collumn jc-center">
+                        <div class="titulo-card">
+                            <h2 class="nome">Giovanna Araújo Silva</h2>
+                            <p class="titulo">Especialista em Redes de Computadores</p>
+                        </div>
+                        <div class="card-content flex">
+                            <div class="card-info flex">
+                                <div class="btns flex flex-collumn jc-space-btw">
+                                    <button class="skills">Soft Skills</button>
+                                    <button class="skills">Hard Skills</button>
+                                    <button class="skills">Outras competencias</button>
+                                </div>
+                                <div class="vl"></div>
+                                <div class="card-text">
+                                    <ul class="list-card flex flex-collumn jc-space-eve">
+                                        <li>Boa comunicação;</li>
+                                        <li>Trabalho em Equipe;</li>
+                                        <li>Dedicação;</li>
+                                        <li>Organização;</li>
+                                        <li>Rápido Aprendizado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- CARD CAIQUE -->
+                <div class="card_full_direita flex jc-flex-end">
+                    <div class="card_direita flex flex-collumn jc-center">
+                        <div class="titulo-card">
+                            <h2 class="nome">Caic Mateus Freitas Silva</h2>
+                            <p class="titulo">Desenvolvedor Full Stack</p>
+                        </div>
+                        <div class="card-content flex">
+                            <div class="card-info flex">
+                                <div class="btns flex flex-collumn jc-space-btw">
+                                    <button class="skills">Soft Skills</button>
+                                    <button class="skills">Hard Skills</button>
+                                    <button class="skills">Outras competencias</button>
+                                </div>
+                                <div class="vl"></div>
+                                <div class="card-text">
+                                    <ul class="list-card flex flex-collumn jc-space-eve">
+                                        <li>Liderança;</li>
+                                        <li>Dedicação;</li>
+                                        <li>Autodidata;</li>
+                                        <li>Boa comunicação;</li>
+                                        <li>Trabalho em Equipe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="foto_membro_direita" src="./img/daniel.png">
+                </div>
+
+                <!-- CARD JOÃO -->
+                <div class="card_full_esquerda flex">
+                    <img class="foto_membro_esquerda" src="./img/alan.png">
+                    <div class="card_esquerda flex flex-collumn jc-center">
+                        <div class="titulo-card">
+                            <h2 class="nome">João Vitor Freitas</h2>
+                            <p class="titulo">Desenvolvedor Full Stack</p>
+                        </div>
+                        <div class="card-content flex">
+                            <div class="card-info flex">
+                                <div class="btns flex flex-collumn jc-space-btw">
+                                    <button class="skills">Soft Skills</button>
+                                    <button class="skills">Hard Skills</button>
+                                    <button class="skills">Outras competencias</button>
+                                </div>
+                                <div class="vl"></div>
+                                <div class="card-text">
+                                    <ul class="list-card flex flex-collumn jc-space-eve">
+                                        <li>Esforçado;</li>
+                                        <li>Rápida entrega;</li>
+                                        <li>Trabalho em equipe;</li>
+                                        <li>Dedicado;</li>
+                                        <li>Focado.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </section>
+    <section class="projetos flex jc-center">
+        <div class="projetos-content">
+            <h1 class="titulo_pg">Projetos</h1>
+            <div class="OkEntregas flex">
+                <img class="logo_oketregas" src="./img/logo-ok-entregas.svg">
+                <div class="card-ok-entregas flex flex-collumn jc-space-eve">
+                    <div>
+                        <h2 class="nome">OK Entrega</h2>
+                        <p class="titulo">Stil Soluções</p>
+                    </div>
+                    <p>Nossa aplitação tem como objetivo de qualificar, se comunicar com Leads e ter registros dessas comunicações e para futuras consultas. Sendo um produto simples e objetivo com tudo claro e intuitivo, planejado para funcionar de forma segura e com fácil acesso.</p>
                 </div>
             </div>
         </div>
-        </section>
-        <section class="rodape">
-            <h1 class="titulo_pg">Projetos</h1>
-            <img class="logo_oketregas" src="./img/logo_okentregas.jpg">
-                <div class="OkEntregas">
-                
-                
+    </section>
+    <section class="contatos flex jc-center">
+        <div class="contatos-content">
+            <h1>Contatos</h1>
+            <div class="contatos-info">
+                <div class="up flex ai-center jc-space-btw">
+                    <div class="card01 flex flex-collumn jc-flex-end">
+                        <div class="shadow"></div>
+                        <div class="text-contatos">
+                            <h4>Alan da Costa Santos</h4>
+                            <p>Web Designer e Front-end</p>
+                        </div>
+                        <img class="foto_membro_esquerda" src="./img/alan.png">
+                    </div>
+                    <div class="card02 flex flex-collumn jc-flex-end">
+                        <div class="shadow"></div>
+                        <div class="text-contatos">
+                            <h4>Daniel Eusébio de Souza Júnior</h4>
+                            <p>Devops</p>
+                        </div>
+                        <img class="foto_membro_direita" src="./img/daniel.png">
+                    </div>
+                    <div class="card03 flex flex-collumn jc-flex-end">
+                        <div class="shadow"></div>
+                        <div class="text-contatos">
+                            <h4>Giovanna Araújo Silva</h4>
+                            <p id="redes">Especialista em Redes de Computadores</p>
+                        </div>
+                        <img class="foto_membro_esquerda" src="./img/giovanna.png">
+                    </div>
                 </div>
-        </section>
+                <div class="down flex ai-center jc-space-eve">
+                    <div class="card04 flex flex-collumn jc-flex-end">
+                        <div class="shadow"></div>
+                        <div class="text-contatos">
+                            <h4>Caic Mateus Freitas Silva</h4>
+                            <p>Desenvolvedor Full Stack</p>
+                        </div>
+                        <img class="foto_membro_direita" src="./img/daniel.png">
+                    </div>
+                    <div class="card05 flex flex-collumn jc-flex-end">
+                        <div class="shadow"></div>
+                        <div class="text-contatos">
+                            <h4>João Vitor Freitas</h4>
+                            <p>Desenvolvedor Full Stack</p>
+                        </div>
+                        <img class="foto_membro_esquerda" src="./img/alan.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
