@@ -267,6 +267,7 @@ body{
     background-color: #FFF;
     border-radius: 5px;
     margin: 0 14px;
+    transition: 0.4s;
 }
 
 .card-content{
@@ -280,6 +281,7 @@ body{
     height: 195px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .titulo-card{
@@ -289,7 +291,7 @@ body{
 .list-card{
     list-style: none;
     padding-left: 15px;
-    height: 100%;
+    min-height: 195px;
 }
 
 #redes{
@@ -386,4 +388,62 @@ body{
 .logo:hover{
     transition: transform .2s;
     transform: scale(1.05);
+}
+
+.scrol-up{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 15px;
+    border: none;
+    bottom: 15px;
+    border-radius: 15px;
+    background-color: #62E395;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.scrol-up:hover, .scrol-up:focus{
+    background: #FFF;
+    color: #62E395;
+}
+
+.scrol-up:active{
+    background: rgb(230, 227, 227);
+    color: #62E395;
+}
+
+.ul-hard{
+    min-height: 195px;
+    padding-left: 18px;
+}
+
+.total-bar{
+    width: 260px;
+    height: 10px;
+    background-color: #101C32;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.progress-bar{
+    width: 200px;
+    height: 10px;
+    background-color: #62E395;
+    position: relative;
+    border-radius: 20px;
+}
+
+.list-card-comp{
+    list-style: none;
+    padding-left: 15px;
+    min-height: 195px;
+}
+
+.card-text-container{
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0);
+    height: 100%;
 }

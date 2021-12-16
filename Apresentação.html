@@ -7,6 +7,7 @@
     <title>Keep Solutions</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0166210c43.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header flex ai-center flex-collumn">
@@ -15,9 +16,9 @@
                 <nav class="nav_menu_header">
                     <ul class="flex ai-center jc-space-btw">
                         <img class="logo" src="./img/logo.png">
-                        <li><a class="nav-item">Quem somos</a></li>
-                        <li><a class="nav-item">Projetos</a></li>
-                        <li><a class="nav-item">Contatos</a></li>
+                        <li><a onclick="quemSomos()" class="nav-item">Quem somos</a></li>
+                        <li><a onclick="projetos()" class="nav-item">Projetos</a></li>
+                        <li><a onclick="contatos()" class="nav-item">Contatos</a></li>
                         <span class="nav-indicator"></span>
                     </ul>
                 </nav>
@@ -36,7 +37,7 @@
                     <h2 class="texto_base1">As respostas para seus problemas</h2>
                     <h2 class="texto_base2">A equipe de desenvolvimento e infraestrura que você precisa!</h2>
                 </div>
-                <button class="botao_saibamais">Saiba mais</button>
+                <button onclick="quemSomos()" class="botao_saibamais">Saiba mais</button>
             </div>
         </div>
     </section>
@@ -47,7 +48,7 @@
                 
                 <!-- CARD ALAN -->
                 <div class="card_full_esquerda flex">
-                    <img class="foto_membro_esquerda" src="./img/alan.png">
+                    <img onclick="contatos()" class="foto_membro_esquerda" src="./img/alan.png">
                     <div class="card_esquerda flex flex-collumn jc-center">
                         <div class="titulo-card">
                             <h2 class="nome">Alan da Costa Santos</h2>
@@ -55,20 +56,51 @@
                         </div>
                         <div class="card-content flex">
                             <div class="card-info flex">
-                                <div class="btns flex flex-collumn jc-space-btw">
-                                    <button class="skills">Soft Skills</button>
-                                    <button class="skills">Hard Skills</button>
-                                    <button class="skills">Outras competencias</button>
+                                <div id="btnBig" class="btns flex flex-collumn jc-space-btw">
+                                    <button id="btn1" class="skills">Soft Skills</button>
+                                    <button id="btn1" class="skills">Hard Skills</button>
+                                    <button id="btn1" class="skills">Outras competencias</button>
                                 </div>
-                                <div class="vl"></div>
+                                <div id="vertical" class="vl"></div>
                                 <div class="card-text">
-                                    <ul class="list-card flex flex-collumn jc-space-eve">
-                                        <li>Boa comunicação;</li>
-                                        <li>Criativo;</li>
-                                        <li>Dedicação;</li>
-                                        <li>Organização;</li>
-                                        <li>Rápido Aprendizado.</li>
-                                    </ul>
+                                    <div id="text1" class="card-text-container flex flex-collumn">
+                                        <ul class="list-card flex flex-collumn jc-space-eve">
+                                            <li>Boa comunicação;</li>
+                                            <li>Criativo;</li>
+                                            <li>Dedicação;</li>
+                                            <li>Organização;</li>
+                                            <li>Rápido Aprendizado.</li>
+                                        </ul>
+                                        <ul class="ul-hard flex flex-collumn jc-space-eve">
+                                            <div class="li-hard">
+                                                <p>JavaScript</p>
+                                                <div class="total-bar"></div>
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="li-hard">
+                                                <p>Html</p>
+                                                <div class="total-bar"></div>
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="li-hard">
+                                                <p>CSS</p>
+                                                <div class="total-bar"></div>
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="li-hard"> 
+                                                <p>C#</p>
+                                                <div class="total-bar"></div>
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                        </ul>
+                                        <ul class="list-card-comp flex flex-collumn jc-space-eve">
+                                            <li>Inglês Intermediário;</li>
+                                            <li>Conhecimentos de Design;</li>
+                                            <li>UI e UX Layouts;</li>
+                                            <li>Kanbam;</li>
+                                            <li>Domínio de React.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,12 +134,12 @@
                             </div>
                         </div>
                     </div>
-                    <img class="foto_membro_direita" src="./img/daniel.png">
+                    <img onclick="contatos()" class="foto_membro_direita" src="./img/daniel.png">
                 </div>
 
                 <!-- CARD GIOVANNA -->
                 <div class="card_full_esquerda flex">
-                    <img class="foto_membro_esquerda" src="./img/giovanna.png">
+                    <img onclick="contatos()" class="foto_membro_esquerda" src="./img/giovanna.png">
                     <div class="card_esquerda flex flex-collumn jc-center">
                         <div class="titulo-card">
                             <h2 class="nome">Giovanna Araújo Silva</h2>
@@ -162,12 +194,12 @@
                             </div>
                         </div>
                     </div>
-                    <img class="foto_membro_direita" src="./img/caic.png">
+                    <img onclick="contatos()" class="foto_membro_direita" src="./img/caic.png">
                 </div>
 
                 <!-- CARD JOÃO -->
                 <div class="card_full_esquerda flex">
-                    <img class="foto_membro_esquerda" src="./img/joao.png">
+                    <img onclick="contatos()" class="foto_membro_esquerda" src="./img/joao.png">
                     <div class="card_esquerda flex flex-collumn jc-center">
                         <div class="titulo-card">
                             <h2 class="nome">João Vitor Freitas</h2>
@@ -264,31 +296,76 @@
             </div>
         </div>
     </section>
+    <button onclick="ScrolUp()" class="scrol-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <script type="text/javascript">
-        function redirectAlan()
-        {
+        function redirectAlan(){
         window.location.href="https://www.linkedin.com/in/alan-da-costa-santos-91a13120a/";
         }
 
-        function redirectDaniel()
-        {
+        function redirectDaniel(){
         window.location.href="https://www.linkedin.com/in/daniel-eus%C3%A9bio-46aa30197";
         }
 
-        function redirectGiovanna()
-        {
+        function redirectGiovanna(){
         window.location.href="https://www.linkedin.com/in/giovanna-ara%C3%BAjo-b1aa98205/";
         }
 
-        function redirectCaic()
-        {
+        function redirectCaic(){
         window.location.href="https://www.linkedin.com/in/caic-mateus-0579131b5/";
         }
 
-        function redirectJoao()
-        {
+        function redirectJoao(){
         window.location.href="https://www.linkedin.com/in/jo%C3%A3o-vitor-freitas-997680195/";
         }
+
+        function quemSomos(){
+            window.scrollTo({
+                top: 970,
+                behavior: "smooth"
+            })
+        }
+
+        function projetos(){
+            window.scrollTo({
+                top: 3000,
+                behavior: "smooth"
+            })
+        }
+
+        function contatos(){
+            window.scrollTo({
+                top: 3500,
+                behavior: "smooth"
+            })
+        }
+
+        function ScrolUp(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+
+        const text = document.getElementById("text1")
+        const roda = document.querySelectorAll("#text1 ul")
+
+        let idx = 0
+
+        function carrosel1(){
+            idx++
+
+            if(idx > roda.length - 1){
+                idx = 0
+            }
+
+            text.style.transform = `translateY(${-idx * 195}px)`
+        }
+
+        setInterval(carrosel1, 2800)
+
+
     </script>
 </body>
 </html>
